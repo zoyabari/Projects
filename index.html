@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zoya Bari, Systems Engineer</title>
+<meta name="description" content="Portfolio of Zoya Bari, a Computer Engineering student working across robotics, control systems, and electrical design.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <nav class="nav">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section id="about" class="intro">
+    <div class="intro-grid">
+      <div class="intro-col">
+        <p class="eyebrow">Computer Engineering, University of Birmingham Dubai</p>
+        <h1>Zoya Bari</h1>
+        <p class="hero-role">Systems Engineer</p>
+      </div>
+      <div class="intro-col">
+        <h2>About</h2>
+        <p class="lede">BEng Computer Engineering student entering her final year, with almost two years of impactful, hands-on experience in robotics, AI applications, control systems, and electrical design.</p>
+        <p>I work across interdisciplinary engineering projects, leading and contributing to builds that span embedded systems, power electronics, and industrial automation, with a growing focus on mechatronics, defense and a commitment to safety, reliability, and standards compliance.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="seam seam-to-alt" aria-hidden="true"></div>
+
+  <section id="projects" class="section alt">
+    <div class="section-head">
+      <h2>Projects</h2>
+    </div>
+
+    <div class="project-group">
+      <h3 class="group-label">Year 1</h3>
+      <div class="tile-grid" id="year1Grid"></div>
+    </div>
+
+    <div class="project-group">
+      <h3 class="group-label">Year 2</h3>
+
+      <div class="year2-row">
+        <div class="feature">
+          <h4 class="feature-title">Industrial Control System Digital Twin</h4>
+          <div class="tile-grid" id="digitalTwinGrid"></div>
+        </div>
+
+        <div class="tile-grid" id="year2Grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="seam seam-to-bg" aria-hidden="true"></div>
+
+  <section id="experience" class="section section-last">
+    <div class="section-head">
+      <h2>Experience</h2>
+    </div>
+    <div class="section-body">
+      <ol class="vtimeline">
+        <li>
+          <span class="vt-dot"></span>
+          <div class="vt-content">
+            <p class="timeline-date">07/2025 - 08/2025</p>
+            <h3>AI Intern <span>· SEE Institute</span></h3>
+            <p>Developed customised AI products for clients, including a voice-enabled AI agent and an NLP-powered sustainability calculator, using PyTorch, LangChain, and Scikit-learn.</p>
+          </div>
+        </li>
+        <li>
+          <span class="vt-dot"></span>
+          <div class="vt-content">
+            <p class="timeline-date">11/2025 - Present</p>
+            <h3>Robotics Engineer <span>· Confidential Client (NDA)</span></h3>
+            <p>Engineering an AI-capable CCTV camera to IP66/IK10 and ONVIF requirements: defining system interfaces, modelling architecture in MBSE/SysML, and designing custom electronics across multiple board revisions.</p>
+          </div>
+        </li>
+        <li>
+          <span class="vt-dot"></span>
+          <div class="vt-content">
+            <p class="timeline-date">07/2026 - Present</p>
+            <h3>Assistant Engineer <span>· Besomi Group</span></h3>
+            <p>Building industrial automation solutions across microcontroller and microprocessor platforms: sensor/actuator integration, robot control code for the Unitree G1/R1/H2 platforms, and a RAG-based AI chatbot for robot behaviour direction, validated in MuJoCo before hardware deployment.</p>
+          </div>
+        </li>
+        <li>
+          <span class="vt-dot"></span>
+          <div class="vt-content">
+            <p class="timeline-date">09/2026 - Present</p>
+            <h3>Research Assistant <span>· University of Birmingham</span></h3>
+            <p>Contributing to the intelligent automation and digitalisation of an AI/IoT-driven, energy-autonomous Direct Air Capture system for urban climate resilience in Dubai, alongside a team of senior professors and engineers, funded by the Dubai Future Foundation.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+</main>
+
+<div class="modal-overlay" id="modalOverlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-label="Project details">
+    <button class="modal-close" id="modalClose" aria-label="Close">Close ✕</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
