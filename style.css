@@ -121,6 +121,16 @@ a {
   margin-bottom: 20px;
 }
 
+.profile-link { margin-top: 20px; }
+
+.profile-link a {
+  font-size: 14px;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.profile-link a:hover { color: var(--mauve); border-bottom-color: var(--rose); }
+
 /* ---------- sections ---------- */
 
 .section {
