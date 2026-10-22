@@ -150,6 +150,14 @@ const projectsData = [
     extraLinks: [{ label: 'Assignment (PDF) →', href: 'SysML - Intelligent Hair Dryer/System Design for an Intelligent Hair Dryer (Annotated).pdf' }]
   },
   {
+    id: 'humra',
+    year: 'Y2',
+    shortTitle: 'HUMRA (Ongoing)',
+    title: 'HUMRA: Humanoid Unified Memory and Reasoning Architecture (Ongoing)',
+    image: null,
+    description: '<p>A cognitive memory architecture for a humanoid robot, inspired by child cognitive development, letting it remember people and experiences across interactions.</p>'
+  },
+  {
     id: 'robotic-arm',
     year: 'Y1',
     title: 'Robotic Arm: 6-Axis',
@@ -245,7 +253,7 @@ function openModal(id) {
       <h3>${p.title}</h3>
       <div class="rich">${p.description}</div>
       <div class="project-links">
-        <a href="${p.link || repoUrl(p.repo)}" target="_blank" rel="noopener">View on GitHub →</a>
+        ${p.link || p.repo ? `<a href="${p.link || repoUrl(p.repo)}" target="_blank" rel="noopener">View on GitHub →</a>` : ''}
         ${extraLinks}
       </div>
     </div>
