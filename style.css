@@ -449,11 +449,55 @@ a {
 
 .section-last { padding-bottom: 140px; }
 
+/* ---------- experience + skills, side by side ---------- */
+
+.split {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.split .section-head { margin: 0 0 40px; }
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.skill-group {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 18px 22px;
+  box-shadow: 0 0 18px 6px var(--card-bg);
+}
+
+.skill-group h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--mauve);
+  margin-bottom: 8px;
+}
+
+.skill-group ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--ink-soft);
+  font-size: 14.5px;
+}
+
+.skill-group li { margin-bottom: 2px; }
+.skill-group li::marker { color: var(--rose); }
+
 /* ---------- responsive ---------- */
 
 @media (max-width: 900px) {
   .intro { padding: 90px 28px 70px; }
   .intro-grid { grid-template-columns: 1fr; gap: 36px; }
+  .split { grid-template-columns: 1fr; gap: 56px; }
   .section { padding: 60px 28px; }
   .topbar { padding: 18px 24px; }
   .tile-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
